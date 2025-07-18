@@ -1,0 +1,181 @@
+/* body styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #fef6e3;
+    color: #353537;
+}
+
+/* header styling */
+header {
+    background-color: #c11f2a;
+    color: #fef6e3;
+    padding: 1rem 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+header span {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Navigation */
+nav {
+    background-color: #e1b457;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 0.83rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    min-height: 48px;
+    color: #353537;
+    font-weight: 700;
+}
+
+nav a.active {
+    background-color: #fef6e3;
+    color: #353537;
+}
+
+nav li a:hover {
+    color: #fef6e3;
+    background-color: #353537;
+}
+
+/* Main Content */
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #c11f2a;
+}
+
+main h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #1f2022;
+    margin-top: 1.5rem;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Main Images */
+figure.seats {
+    margin: 0 0 0 10px;
+    width: 40%;
+    float: right;
+}
+
+figure.seats img {
+    width: 100%;
+    height: auto;
+}
+
+figure.seats figcaption {
+    text-align: center;
+    font-size: .75rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Image Gallery */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 15px;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    font-style: oblique;
+    color: #333;
+}
+
+/* Main Lists */
+main ol {
+    padding: 0.5rem 1.5rem;
+    border-left: 4px solid #c11f2a;
+    list-style-position: inside;
+}
+
+main ul {
+    list-style-type: square;
+    padding-left: 2rem;
+}
+
+main dl dt {
+    font-weight: 700;
+    color: #c11f2a;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color: #9a1806;
+    margin-left: 20px;
+}
+
+main strong {
+    color: #353537;
+}
+
+main em {
+    font-style: italic;
+    color: #e1b457;
+}
+
+/* Address */
+main address {
+    background-color: #e1b457;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #353537;
+    width: fit-content;
+    font-style: normal;
+}
+
+/* Links */
+a {
+    color: #c11f2a;
+}
+
+a:hover {
+    color: #1f2022;
+}
+
+/* Footer */
+footer {
+    background-color: #f7e7cd;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #333;
+    clear: both;
+}
+
+
+/* Comments */
+/* Layout: Header, Nav, Main, Footer */
+/* Fonts: Montserrat for body, Playfair Display for headings */
+/* Colors: Vintage red, gold, cream, charcoal */
+/* Flexbox nav, hover effects, border-radius, list styling */
