@@ -1,0 +1,268 @@
+/* body styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #fef6e3;
+    color: #353537;
+}
+
+/* header styling */
+header {
+    background-color: #c11f2a;
+    color: #fef6e3;
+    padding: 1rem 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+header span {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Navigation */
+nav {
+    background-color: #e1b457;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 0.83rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    min-height: 48px;
+    color: #353537;
+    font-weight: 700;
+}
+
+nav a.active {
+    background-color: #fef6e3;
+    color: #353537;
+}
+
+nav li a:hover {
+    color: #fef6e3;
+    background-color: #353537;
+}
+
+/* Main Content */
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #c11f2a;
+}
+
+main h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #1f2022;
+    margin-top: 1.5rem;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Main Page Images */
+figure.seats {
+    margin: 0 0 0 10px;
+    width: 40%;
+    float: right;
+}
+
+figure.seats img {
+    width: 100%;
+    height: auto;
+}
+
+figure.seats figcaption {
+    text-align: center;
+    font-size: .75rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Image Gallery */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 15px;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    font-style: oblique;
+    color: #333;
+}
+
+/* Main Lists */
+main ol {
+    padding: 0.5rem 1.5rem;
+    border-left: 4px solid #e1b457;
+    list-style-position: inside;
+}
+
+main ul {
+    list-style-type: square;
+    padding-left: 2rem;
+}
+
+main dl dt {
+    font-weight: 700;
+    color: #c11f2a;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color: #9a1806;
+    margin-left: 20px;
+}
+
+main strong {
+    color: #353537;
+}
+
+main em {
+    font-style: italic;
+    color: #c11f2a;
+}
+
+/* Links */
+a {
+    color: #c11f2a;
+}
+
+a:hover {
+    color: #e1b457;
+}
+
+/* Address */
+main address {
+    background-color: #c11f2a;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #353537;
+    width: fit-content;
+    font-style: normal;
+}
+
+main address a {
+    color: #fef6e3;
+}
+
+/* Form Styling */
+.myForm {
+    background-color: #fff9ef;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border: 2px solid #e1b457;
+    border-radius: 6px;
+    max-width: 600px;
+}
+
+.myForm fieldset {
+    border: 1px solid #c11f2a;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #fef6e3;
+}
+
+.myForm legend {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #c11f2a;
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+.myForm label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.myForm p {
+    margin: 0 0 1rem 0;
+}
+
+.myForm input[type="text"],
+.myForm input[type="email"],
+.myForm input[type="tel"],
+.myForm select,
+.myForm textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem .01rem;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #e1b457;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #353537;
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm input[type="checkbox"],
+.myForm input[type="radio"] {
+    margin-right: 0.4rem;
+    accent-color: #c11f2a;
+}
+
+.myForm input[type="submit"] {
+    background-color: #c11f2a;
+    color: #fef6e3;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.myForm input[type="submit"]:hover {
+    background-color: #9a1806;
+    color: #fff;
+}
+
+.myForm input:required,
+.myForm textarea:required {
+    background-color: rgba(193, 31, 42, 0.07);
+}
+
+/* Footer */
+footer {
+    background-color: #f7e7cd;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #333;
+    clear: both;
+}
+
+/* Comments */
+/* Layout: Header, Nav, Main, Footer */
+/* Fonts: Montserrat for body, Playfair Display for headings */
+/* Colors: Vintage red, gold, cream, charcoal */
+/* Flexbox nav, hover effects, border-radius, list styling */
