@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Olivia Wells">
+    <meta name="description" content="A personal ranking of Olivia's Top 10 Favorite Movies">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia's Top 10 Favorite Movies: Overview</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<!--start the page header-->
+<header>
+    <img src="images/logo.png" alt="film reel logo for Olivia's Top 10 Movies site" width="100" height="93">
+    <span>Olivia's Top 10 Favorite Movies</span>
+</header>
+
+<!--start the page navigation-->
+<nav>
+    <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="top.html">Top 10</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="share.html" class="active">Share Yours</a></li>
+        <li><a href="learn.html">Learn More</a></li>
+    </ul>
+</nav>
+
+<!--start the form page content-->
+<main>
+    <h1>Share Yours</h1>
+    <p><strong>Now that you know my top movies, I want to hear about some of yours!</strong></p>
+    <p>Let me know in the form below your top 3 favorite movies; bonus points if any of them happen to be the same as
+        mine.</p>
+
+    <p>If you want someone else to join in on the fun, you can <a href="top10brochure.pdf" target="_blank"> download
+            this </a> to send to them!</p>
+
+    <!--start form-->
+    <form method="get" class="myForm" action="thanks.html">
+
+        <!--first fieldset-->
+        <fieldset>
+            <legend>About You</legend>
+            <label>Name *<input type="text" name="fname" required></label>
+            <label>Email *<input type="email" name="email" required></label>
+            <label>Cell Phone Number<input type="tel" name="phone" placeholder="(123) 456-7890"></label>
+            <p><strong>Which main or micro generation do you belong to?</strong></p>
+            <label><input type="radio" name="generation" value="Acen"> Alphacentennial <em>(born 2011-2015)</em></label>
+            <label><input type="radio" name="generation" value="Gen Z"> Gen Z <em>(born 1999-2010)</em></label>
+            <label><input type="radio" name="generation" value="Zillennial"> Zillennial <em>(born
+                    1994-1998)</em></label>
+            <label><input type="radio" name="generation" value="Millennial"> Millennial <em>(born
+                    1983-1993)</em></label>
+            <label><input type="radio" name="generation" value="Xennial"> Xennial <em>(born 1978-1982)</em></label>
+            <label><input type="radio" name="generation" value="Gen X"> Gen X <em>(born 1966-1977)</em></label>
+            <label><input type="radio" name="generation" value="Not Listed"> Not Listed</label>
+        </fieldset>
+
+        <!--second fieldset-->
+        <fieldset>
+            <legend>Your Top 3 Movies</legend>
+            <label>Favorite Movie #1 *<input type="text" name="movie1" required></label>
+            <label>Favorite Movie #2<input type="text" name="movie2"></label>
+            <label>Favorite Movie #3<input type="text" name="movie3"></label>
+        </fieldset>
+
+        <!--third fieldset-->
+        <fieldset>
+            <legend>Why These Films?</legend>
+            <label><strong>Tell me what makes these movies special to you:</strong>
+                <textarea name="reasons" placeholder="I cried, I laughed, I saw myself in them..."></textarea></label>
+        </fieldset>
+
+        <!--fourth fieldset-->
+        <fieldset>
+            <legend>Movie Preferences</legend>
+            <p><strong>Genres You Love:</strong> <em>(select all that apply)</em></p>
+            <label><input type="checkbox" name="genre" value="Action"> Action</label>
+            <label><input type="checkbox" name="genre" value="Romance"> Romance</label>
+            <label><input type="checkbox" name="genre" value="Comedy"> Comedy</label>
+            <label><input type="checkbox" name="genre" value="Sci-Fi"> Sci-Fi</label>
+            <label><input type="checkbox" name="genre" value="Animation"> Animation</label>
+            <label><input type="checkbox" name="genre" value="Indie"> Indie/Arthouse</label>
+            <label><input type="checkbox" name="genre" value="All"> I love them all</label>
+
+            <label><strong>How often do you rewatch a favorite movie?</strong>
+                <select name="rewatch">
+                    <option value="none">Please Select</option>
+                    <option value="never">I don't rewatch movies</option>
+                    <option value="sometimes">Every once in a while</option>
+                    <option value="yearly">Once a year</option>
+                    <option value="few">A few times a year</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="constant">Constantly</option>
+                </select>
+            </label>
+        </fieldset>
+
+
+
+        <!--submit-->
+        <input type="submit" value="Share Your Top 3">
+    </form>
+
+</main>
+
+<!--start footer-->
+<footer>
+    <p>&copy; 2025 Olivia Wells &bull; <a href="https://letterboxd.com/zortcaster/" target="_blank">Letterboxd</a>
+        &bull;
+        <a href="https://www.imdb.com/user/ur37844448/?ref_=ext_shr_lnk" target="_blank">IMDb</a> &bull; Powered by
+        popcorn🍿
+    </p>
+</footer>
+
+
+</html>
